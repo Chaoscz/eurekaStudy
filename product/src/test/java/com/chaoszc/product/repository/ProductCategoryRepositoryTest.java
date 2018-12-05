@@ -1,6 +1,7 @@
 package com.chaoszc.product.repository;
 
 import com.chaoszc.product.dataobject.ProductCategory;
+import com.chaoszc.product.dataobject.ProductInfo;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -27,4 +28,5 @@ public class ProductCategoryRepositoryTest {
         List<ProductCategory> productCategories = productCategoryRepository.findByCategoryTypeIn(types);
         Assert.assertTrue(productCategories.size()>0);
     }
+
 }
